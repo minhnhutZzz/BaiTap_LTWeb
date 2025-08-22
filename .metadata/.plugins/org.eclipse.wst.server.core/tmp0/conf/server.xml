@@ -142,7 +142,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\caiToolLapTrinhWeb\Workspace_Spring_Tool_Suite\LaptrinhWeb\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\caiToolLapTrinhWeb\Workspace_Spring_Tool_Suite\LaptrinhWeb\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\baitap01_Cookie" path="/baitap01_Cookie" reloadable="true" source="org.eclipse.jst.jee.server:baitap01_Cookie"/></Host>
+      <Context docBase="D:\caiToolLapTrinhWeb\Workspace_Spring_Tool_Suite\LaptrinhWeb\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\caiToolLapTrinhWeb\Workspace_Spring_Tool_Suite\LaptrinhWeb\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\baitap01_Sessionss" path="/baitap01_Sessionss" reloadable="true" source="org.eclipse.jst.jee.server:baitap01_Sessionss"/></Host>
     </Engine>
   </Service>
 </Server>

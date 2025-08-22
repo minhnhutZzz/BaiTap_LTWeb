@@ -19,4 +19,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Login_Session</display-name>
+    <servlet-name>Login_Session</servlet-name>
+    <servlet-class>Login_Session</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login_Session</servlet-name>
+    <url-pattern>/Login_Session</url-pattern>
+  </servlet-mapping>
 </web-app>
