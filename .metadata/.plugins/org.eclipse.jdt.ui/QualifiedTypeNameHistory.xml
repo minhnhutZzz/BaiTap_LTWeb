@@ -2,4 +2,5 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="vm.iotstar.Dao.UserDaoImpl"/>
+    <fullyQualifiedTypeName name="vm.iotstar.services.UserService"/>
 </qualifiedTypeNameHistroy>

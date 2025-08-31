@@ -10,8 +10,6 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import jakarta.servlet.http.Cookie;
-
 @WebServlet(urlPatterns = { "/login" })
 
 public class Login_Sessions extends HttpServlet {

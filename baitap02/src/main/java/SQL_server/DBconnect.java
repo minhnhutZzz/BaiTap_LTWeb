@@ -21,7 +21,7 @@ public class DBconnect {
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 		return DriverManager.getConnection(url, userID, password);
 	}
-
+	
 	public static void main(String[] args) {
 		try {
 			System.out.println(new DBconnect().getConnection());

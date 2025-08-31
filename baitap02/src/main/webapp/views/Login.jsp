@@ -1,71 +1,87 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-        }
-        .login-container {
-            max-width: 400px;
-            margin: auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
-        }
-        .login-header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .form-control {
-            margin-bottom: 15px;
-        }
-        .alert {
-            margin-bottom: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<style>
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f8f9fa;
+}
+
+.form-box {
+	width: 100%;
+	max-width: 400px;
+	padding: 20px;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+	display: flex;
+	justify-content: center;
+}
+
+.button-group .btn {
+	margin: 0 20px;
+}
+</style>
 </head>
 <body>
+	<div class="form-box">
+		<form action="${pageContext.request.contextPath}/login" method="post">
+			<h2 class="text-center mb-4">Login</h2>
 
-    <div class="login-container">
-        <div class="login-header">
-            <h2>Đăng nhập vào hệ thống</h2>
-        </div>
+			<c:if test="${alert != null}">
+				<h6 class="alert alert-danger text-center">${alert}</h6>
+			</c:if>
+			<c:if test="${successMsg != null}">
+				<div class="alert alert-success" role="alert">${successMsg}</div>
+			</c:if>
 
-        <!-- Hiển thị thông báo lỗi nếu có -->
-        <c:if test="${not empty error}">
-            <div class="alert alert-danger">${error}</div>
-        </c:if>
 
-        <form action="${pageContext.request.contextPath}/login" method="post">
-            <div class="form-group">
-                <label for="username">Tài khoản:</label>
-                <input type="text" class="form-control" id="username" name="username" placeholder="Nhập tài khoản" required />
-            </div>
-            <div class="form-group">
-                <label for="password">Mật khẩu:</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Nhập mật khẩu" required />
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe" />
-                    <label class="form-check-label" for="rememberMe">Ghi nhớ tôi</label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
-        </form>
+			<div class="mb-3">
+				<label class="form-label">User name</label>
+				<div class="input-group">
+					<span class="input-group-text"><i class="fa fa-user"></i></span> <input
+						type="text" placeholder="Enter username" name="username"
+						class="form-control" required>
+				</div>
+			</div>
 
-        <p class="text-center mt-3">Chưa có tài khoản? <a href="signup.jsp">Đăng ký ngay</a></p>
-    </div>
+			<div class="mb-3">
+				<label class="form-label">Password</label>
+				<div class="input-group">
+					<span class="input-group-text"><i class="fa fa-lock"></i></span> <input
+						type="password" placeholder="Enter password" name="password"
+						class="form-control" required>
+				</div>
+			</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+			<div class="form-check mb-3">
+				<input class="form-check-input" type="checkbox" id="rememberMe"
+					name="remember"> <label
+					class="form-check-label text-muted small fw-light" for="rememberMe">
+					Remember me </label>
+			</div>
+
+			<div class="button-group">
+				<button type="submit" class="btn btn-primary">Login</button>
+				<a href="register.jsp" class="btn btn-secondary">Register</a>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
