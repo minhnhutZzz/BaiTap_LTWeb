@@ -1,7 +1,5 @@
 INDEX VERSION 1.134+D:\caiToolLapTrinhWeb\Workspace_Spring_Tool_Suite\LaptrinhWeb\.metadata\.plugins\org.eclipse.jdt.core
 1071020053.index
 4293597345.index
-3504453448.index
-1565082291.index
+2055351946.index
 1865797976.index
-1496641813.index
