@@ -36,6 +36,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\caiToolLapTrinhWeb\Workspace_Spring_Tool_Suite\LaptrinhWeb\baitap2_3"/>
 			<item value="D:\caiToolLapTrinhWeb\Workspace_Spring_Tool_Suite\LaptrinhWeb\baitap02_"/>
 			<item value="D:\caiToolLapTrinhWeb\Workspace_Spring_Tool_Suite\LaptrinhWeb\baitap01_Cookie"/>
 		</list>
